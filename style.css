@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;600;900&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+header {
+    background: url(../img/Background.png) no-repeat center top / cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+}
+
+.menu__list {
+    padding: 0;
+    margin: 40px 80px 0 0;
+    display: flex;
+}
+
+.sub-menu__list>li {
+    margin-top: 30px;
+}
+
+.menu__list>li:hover .sub-menu__list{
+    display: block;
+}
+
+.menu li {
+    display: block;
+    margin-right: 20px;
+}
+
+.menu a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.sub-menu__list {
+    display: none;
+    position: absolute;
+    left: 1005px;
+    top: 60px;
+}
+
+.link-hover-center a {
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+.link-hover-center a:after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.link-hover-center a:hover:after,
+.link-hover-center a:focus:after {
+    width: 100%;
+}
+
+.title {
+    margin-left: 475px;
+    margin-top: 180px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.title__second {
+    font-size: 75px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 900;
+}
+
+.subtitle {
+    margin-left: 80px;
+    margin-top: 160px;
+    color: #fff;
+}
+
+#firstpage_hr {
+    margin-left: 0;
+    margin-top: 250px;
+    color: #fff;
+    width: 200px;
+    border: none;
+	border-top: 3px solid #fff;
+    border-radius: 10px;
+}
+
+.subtitle__text {
+    font-size: 24px;
+}
+
+.logo {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+#header__hr {
+    border: none;
+}
+
+/* Второй экран */
+
+#sec2 {
+    background: url(../img/background2.png) no-repeat center top / cover;
+    height: 100%;
+}
+
+.sec2__description {
+    font-size: 24px;
+    margin-left: 0;
+    margin-bottom: 400px;
+    padding-top: 40px;
+}
+
+.sec2__title {
+    font-size: 80px;
+    font-weight: 900;
+    color: #2c3926;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.sec2__title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.content__item {
+    width: 125px;
+    float: right;
+    text-align: center;
+    margin: 25px 30px 100px;
+}
+.sec2__bg {
+    height: 260px;
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+/* Третий экран */
+
+#sec3 {
+    max-height: 820px;
+    position: relative;
+}
+
+.sec3__bg1 {
+    height: 410px;
+    background-color: #f2f2f2;  
+}
+
+.sec3__bg2 {
+    height: 410px;
+    background-color: #fff;
+}
+
+.sec3__bg3 {
+    height: 550px;
+    width: 1020px; 
+    position: absolute;
+    top: 135px;
+    left: 210px;
+    z-index: 1;
+    background-image: url(../img/plant.png);
+    background-size: cover;
+}
+
+#inst__tag {
+    position: absolute;
+    right: 250px;
+    bottom: 100px;
+    font-size: 22px;
+}
+
+#inst__logo {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-image: url(../img/inst.png);
+    right: 210px;
+    bottom: 100px;
+    z-index: 2;
+}
+
+.sec3__textblock {
+    height: 550px;
+    width: 350px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 300px;
+    padding: 70px 30px 20px 30px;
+    margin-top: 15px;
+}
+
+.textblock__title {
+    margin-top: -35px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.textblock__hr {
+    width: 250px;
+	border-top: 3px solid #000;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#textblock__subtitle {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.textblock__chracters {
+    float: left;
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 40px;
+    margin-bottom: 90px;
+}
+
+#textblock__characters-text {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#textblock__footer-size {
+    font-size: 26px;
+}
+
+#textblock__footer-family {
+    font-size: 18px;
+}
+
+/* Четвертый экран */
+
+#sec4 {
+    height: 100%;
+    display: flex;
+}
+
+#sec4__pic {
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+
+}
+.sec4__plant {
+    width: 300px;
+    height: 300px;
+}
+
+#sec4__plant1 {
+    background: url(../img/plant1.png);
+    background-size: cover;
+    background-position: -20px 0px; 
+}
+
+#sec4__plant2 {
+    background: url(../img/plant2.png);
+    background-size: cover;
+    background-position: -20px 0px;
+}
+
+#sec4__plant3 {
+    background: url(../img/plant3.png);
+    background-size: cover;
+    background-position: -20px 0px;
+}
+
+.sec4__title {
+    font-size: 50px;
+    color: #829c2d;
+    margin-top: 80px;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.sec4__title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0s;
+}
+
+#sec4__subtitle {
+    margin-top: 90px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+#sec4__pic {
+    width: 100%;
+    float: left;
+    display: flex;
+    margin-bottom: 135px;
+}
+
+.sec4__plant  {
+    margin: 10px;
+    float: left;
+}
+
+/* Пятый экран */
+
+#sec5 {
+    height: 100%;
+    background: url(../img/background5.png) no-repeat center top / cover;
+    overflow: hidden;
+}
+
+.sec5__title {
+    font-size: 55px;
+    color: #313b30;
+    font-weight: 900;
+    margin-top: 80px;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.sec5__title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0s;
+}
+
+#sec5__subtitle {
+    font-size: 30px;
+    margin-bottom: 530px;
+    margin-top: -30px;
+}
+
+/* Шестой экран */
+
+#sec6 {
+    height: 820px;
+    background: url(../img/background6.png) no-repeat center top / cover;
+    overflow: hidden;
+}
+
+.sec6__title {
+    font-size: 60px;
+    color: #000;
+    font-weight: 900;
+    margin-top: 150px;
+    margin-bottom: 65px;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.sec6__title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0s;   
+}
+
+#sec6__subtitle {
+    font-size: 34px;
+    margin-bottom: 280px;
+}
+
+/* Седьмой экран */
+
+#sec7 {
+    height: 820px;
+    background: url(../img/background7.png) no-repeat center top / cover;
+    overflow: hidden;
+}
+
+.sec7__title {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 900;
+    margin-top: 340px;
+    margin-bottom: 95px;
+    text-align: right;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.sec7__title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0s;
+}
+
+.sec7__subtitle {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: right;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.sec7__subtitle._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.4s;
+}
+
+#sec7__text {
+    font-size: 34px;
+    color: #fff;
+    margin-bottom: 135px;
+    text-align: right;
+}
+
+/* Восьмой экран */
+
+#sec8 {
+    height: 820px;
+    background-color: #fff;
+}
+
+#sec8__title {
+    font-size: 40px;
+    color: #000;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#sec8__subtitle {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
+
+#sec8__label {
+    width: 135px;
+    height: 100px;
+    background-color: #486138;
+    margin-top: -120px;
+    margin-left: 1200px;
+    text-align: center;
+    border-radius: 0 0 15px 80px;
+}
+
+#sec8__label-logo {
+    float: right;
+    margin-right: 40px;
+    margin-top: 40px;    
+}
+
+#sec8__goods {
+    max-width: 1200px;
+    height: 650px;
+    margin: 30px 120px;
+}
+
+.sec8__item {
+    float: left;
+    display: block;
+    width: 250px;
+    height: 280px;
+    margin: 25px;
+}
+
+.sec8__item-photo {
+    width: 250px;
+    height: 250px;
+}
+
+.sec8__item-name {
+    display: inline-block;
+    margin-left: 5px;
+    color: #486138;
+    font-weight: 800;
+}
+
+.sec8__item-cost {
+    display: block;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 5px;
+    width: auto;
+    position: relative;
+    float: right;
+}
+
+/* Девятый экран */
+
+#sec9 {
+    height: 820px;
+    background: url(../img/background9.png) no-repeat center top / cover;
+    overflow: hidden;
+    display: block;
+}
+
+#sec9__title {
+    font-size: 60px;
+    color: #fff;
+    font-weight:normal;
+    margin: 200px 400px 60px -50px;
+    text-align: right;
+}
+
+#sec9__button {
+    background: #4e5e56;
+    color: #fff;
+    border-radius: 8px;
+    display: block;
+    width: 240px;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#sec9__footer {
+    margin-top: 220px;
+    height: 120px;
+    background-color: #181d1a;
+    text-align: center;
+}
+
+#sec9__footer-text {
+    padding: 10px;
+    margin-right: 50px;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+
+
+
+/* Стили для подложки */
+
+.overlay {
+   
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+ }
+ 
+ 
+ /* Стили для модальных окон */ 
+ .modal {    
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+    /*  Установаем ширину окна  */
+    width: 100%;
+    max-width: 500px;
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30; /* Должен быть выше чем у подложки*/
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.3s all;
+ }
+ 
+ 
+ /* Стили для активных классов подложки и окна */ 
+ .modal.active,
+ .overlay.active{
+    opacity: 1;
+    visibility: visible;
+ }
+ /* Стили для кнопки закрытия */ 
+ .modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+ }
