@@ -6,6 +6,29 @@ body {
     margin: 0;
 }
 
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (max-width:1200px){
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px){
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px){
+    .container {
+        max-width: none;
+    }
+}
+
 .clearfix:after {
     content: '';
     display: table;
@@ -21,11 +44,6 @@ header {
     background: url(../img/Background.png) no-repeat center top / cover;
     height: 100%;
     overflow: hidden;
-}
-
-.container {
-    width: 1000px;
-    margin: 0 auto;
 }
 
 nav {
@@ -62,8 +80,7 @@ nav {
 .sub-menu__list {
     display: none;
     position: absolute;
-    left: 1005px;
-    top: 60px;
+    margin-left: -40px;
 }
 
 .link-hover-center a {
@@ -206,6 +223,12 @@ nav {
     z-index: 1;
     background-image: url(../img/plant.png);
     background-size: cover;
+    margin: auto;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 #inst__tag {
@@ -234,7 +257,15 @@ nav {
     top: 0;
     left: 300px;
     padding: 70px 30px 20px 30px;
-    margin-top: 15px;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-right: 50%;
+    margin-top: 5%;
+    
 }
 
 .textblock__title {
@@ -461,9 +492,33 @@ nav {
 
 /* Восьмой экран */
 
+.container2 {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width:1200px){
+    .container2 {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px){
+    .container2 {
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px){
+    .container2 {
+        max-width: none;
+    }
+}
+
 #sec8 {
-    height: 820px;
+    height: 100%;
     background-color: #fff;
+    display: block;
 }
 
 #sec8__title {
@@ -481,25 +536,31 @@ nav {
 }
 
 #sec8__label {
-    width: 135px;
-    height: 100px;
+    width: 10%;
     background-color: #486138;
-    margin-top: -120px;
-    margin-left: 1200px;
+    display: block;
+    position:absolute;
+    right: 0;
+    top: 0;
     text-align: center;
     border-radius: 0 0 15px 80px;
+   
 }
 
 #sec8__label-logo {
     float: right;
-    margin-right: 40px;
-    margin-top: 40px;    
+    right: 0%;
+    top: 0%;  
+    margin-right: 10%;
 }
 
 #sec8__goods {
-    max-width: 1200px;
-    height: 650px;
-    margin: 30px 120px;
+    height: auto;
+    width: 80%;
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sec8__item {
@@ -507,12 +568,71 @@ nav {
     display: block;
     width: 250px;
     height: 280px;
-    margin: 25px;
+    margin: 5px;    
 }
 
-.sec8__item-photo {
+#item-photo1 {
+    background: url(../img/plant8_1.png);
     width: 250px;
     height: 250px;
+    display: block;
+    background-size: cover;
+}
+
+#item-photo2 {
+    background: url(../img/plant8_2.png);
+    width: 250px;
+    height: 250px;
+    display: block;
+    background-size: cover;
+}
+
+#item-photo3 {
+    background: url(../img/plant8_3.png);
+    width: 250px;
+    height: 250px;
+    display: block;
+    background-size: cover;
+}
+
+#item-photo4 {
+    background: url(../img/plant8_4.png);
+    width: 250px;
+    height: 250px;
+    display: block;
+    background-size: cover;
+}
+
+#item-photo5 {
+    background: url(../img/plant8_5.png);
+    width: 250px;
+    height: 250px;
+    display: block;
+    background-size: cover;
+}
+
+#item-photo6 {
+    background: url(../img/plant8_6.png);
+    width: 250px;
+    height: 250px;
+    display: block;
+    background-size: cover;
+}
+
+#item-photo7 {
+    background: url(../img/plant8_7.png);
+    width: 250px;
+    height: 250px;
+    display: block;
+    background-size: cover;
+}
+
+#item-photo8 {
+    background: url(../img/plant8_8.png);
+    width: 250px;
+    height: 250px;
+    display: block;
+    background-size: cover;
 }
 
 .sec8__item-name {
